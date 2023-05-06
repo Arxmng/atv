@@ -6,4 +6,4 @@ const percentual = Number(prompt('Digite o percentual de reajuste'))
 
 const  salarionovo = salario + (salario * (percentual/100))
 
-console.log(salarionovo)
+console.log(salarionovo);
