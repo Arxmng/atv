@@ -1,10 +1,30 @@
-Inicia o repositorio atv5
+# React + TypeScript + Vite
 
-Atividade 5
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-N1 - 1º Bimestre
-Instruções
-1. Crie um componente para inserir um Input customizado (que deve ter a cordo texto vermelha) que pode receber um valor inicial, um tipo e um texto que será inserido como placeholder
- 
-2. Monte um componente formulário no App.tsx com os campos de nome, e-mail, telefone e um botão de enviar. Por enquanto o botão não precisa realizar nenhuma ação.
-Meu trabalho
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+export default {
+  // other rules...
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+  },
+}
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
